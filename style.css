@@ -105,11 +105,6 @@ body {
     box-shadow: none; /* Remove any shadow effect */
 }
 
-
-
-
-
-
 /* About Section */
 #about {
     display: flex;
@@ -123,29 +118,64 @@ body {
     display: flex;
     align-items: center;
     max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-image {
     max-width: 250px;
-    margin-right: 40px;
-    border: 2px solid #d04343; /* Specify width, style, and color */
-    border-radius: 5px; /* Optional: adds rounded corners */
+    margin-right: 30px;
+    border: 2px solid #d04343;
+    border-radius: 5px;
 }
 
+.about-text {
+    max-width: 600px;
+}
 
-.about-content h2 {
+.about-text h2 {
     color: #f05454;
     font-size: 2em;
     margin-bottom: 15px;
 }
 
+.subtitle {
+    font-size: 1.2em;
+    color: #f05454;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #aaa;
+
+}
+
+.about-details li {
+    margin-bottom: 5px;
+}
+
+.about-buttons {
+    margin-top: 25px;
+}
 .about-buttons .btn {
-    margin-top: 15px;
+    /* margin-top: 5px !important; */
     padding: 10px 20px;
     background-color: #f05454;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .about-buttons .btn:hover {
@@ -230,10 +260,78 @@ h2 {
     background-color: #f05454;
 }
 
+/* Trainings Section */
+#trainings {
+    padding: 60px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+#trainings h2 {
+    color: #f05454;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Timeline Style */
+.training_timeline {
+    position: relative;
+    padding-left: -10px;
+    margin-left: 45px;
+    border-left: 2px solid #b6b8b7;
+    text-align: left;
+    max-width: 800px;
+}
+
+.training_timeline-item {
+    position: relative;
+    margin: 20px 0 20px 20px;
+}
+
+.training_timeline-icon {
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #f05454;
+    border-radius: 50%;
+}
+
+.training_timeline-content {
+    margin-left: 20px;
+}
+
+.training_timeline-content h3 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.training_timeline-content .date {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.training_timeline-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.training_timeline-content ul li {
+    font-size: 0.95em;
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+
 /* Experience and Projects Section */
 #experience {
     padding: 60px;
-    background-color: #111;
+    background-color: #424141;
     color: white;
     text-align: center;
 }
@@ -310,6 +408,78 @@ h2 {
     color: #aaa;
 }
 
+/* Contact Section */
+#contact {
+    padding: 60px;
+    background-color: #535151;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #f05454;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    font-size: 1em;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #f05454;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d04343;
+}
 
 /* Footer */
 footer {
