@@ -481,6 +481,15 @@ h2 {
     background-color: #d04343;
 }
 
+.message {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    resize: vertical; 
+}
 /* Footer */
 footer {
     text-align: center;
