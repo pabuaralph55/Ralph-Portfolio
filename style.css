@@ -417,37 +417,6 @@ h2 {
 .project-item h3 a:hover {
     text-decoration: underline; /* Optional: underline on hover to indicate it's clickable */
 }
-
-/* Project List Styling */
-/* .project-list {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #222;
-    border-radius: 8px;
-}
-
-.project-item {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #333;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.project-item h3 {
-    color: #f05454;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.project-item p {
-    font-size: 1em;
-    color: #ddd;
-    line-height: 1.6;
-    margin-top: 10px;
-} */
-
 .project-image {
     width: 100%;
     max-width: 750px;
