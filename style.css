@@ -286,7 +286,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 60px;
-    background-color: #222;
+    background-color: #444343;
 }
 
 .education, .skills {
@@ -488,7 +488,7 @@ h2 {
 /* Experience and Projects Section */
 #experience {
     padding: 60px;
-    background-color: #424141;
+    background-color: #444343;
     color: white;
     text-align: center;
 }
@@ -591,7 +591,7 @@ h2 {
 /* Contact Section */
 #contact {
     padding: 60px;
-    background-color: #535151;
+    background-color: #444343;
     color: white;
     text-align: center;
 }
