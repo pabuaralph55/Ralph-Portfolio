@@ -374,11 +374,11 @@ h2 {
     }
 
     .timeline {
-        padding-left: 30px; /* Adjusts padding for smaller screens */
+        padding-left: -60px; /* Adjusts padding for smaller screens */
     }
 
     .timeline-icon {
-        left: -20px; /* Adjust icon alignment for smaller screens */
+        left: -27px; /* Adjust icon alignment for smaller screens */
     }
 
     .skill p {
