@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header">
+        <a href="#hero" class="logo">Ralph<span>.</span></a>
+        <nav class="site-nav" id="site-nav">
+            <a href="#about">About</a>
+            <a href="#education-skills">Skills</a>
+            <a href="#trainings">Trainings</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            ☰
+        </button>
+    </header>
 
     <!-- Hero Section -->
 <section id="hero">
@@ -23,10 +37,28 @@
 
         <div class="hero-buttons">
             <a href="#about" class="btn primary-btn">Learn More</a>
+            <a href="#projects" class="btn secondary-btn">View Projects</a>
         </div>
     </div>
     <div class="hero-image-container">
         <img src="photo/myphoto.png" alt="MyProfile" class="hero-image"> <!-- Make sure this image has a transparent background -->
+    </div>
+</section>
+
+<section id="quick-stats">
+    <div class="stats-grid">
+        <div class="stat-card reveal">
+            <h3>3+ Years</h3>
+            <p>Professional web development experience.</p>
+        </div>
+        <div class="stat-card reveal">
+            <h3>20+ Projects</h3>
+            <p>Websites and apps delivered across platforms.</p>
+        </div>
+        <div class="stat-card reveal">
+            <h3>Full-Stack + CMS</h3>
+            <p>Laravel, WordPress, Shopify, React, and DevOps.</p>
+        </div>
     </div>
 </section>
 
@@ -49,7 +81,7 @@
                 development workflows to ensure high standards of quality and performance.</p>
             <ul class="about-details">
                 <li><strong>Birthday:</strong> August 29, 1982</li>
-                <li><strong>Location:</strong> Villa Angelina, Danao City, Cebu, Phillipines</li>
+                <li><strong>Location:</strong> Villa Angelina, Danao City, Cebu, Philippines</li>
                 <li><strong>Email:</strong> pabua.ralph55@gmail.com</li>
             </ul>
             <div class="about-buttons">
@@ -151,7 +183,7 @@
                 <div class="progress-bar"><span style="width: 80%;"></span></div>
             </div>
             <div class="skill">
-                <p>MySQ</p>
+                <p>MySQL</p>
                 <div class="progress-bar"><span style="width: 80%;"></span></div>
             </div>
             <div class="skill">
@@ -339,6 +371,7 @@
             <!-- Project 1: Real Estate CRM Platform -->
             <div class="project-item">
                 <h3><a href="https://redhq.com.au/" target="_blank">Project 1: Real Estate CRM Platform</a></h3>
+                <p class="project-tags"><span>Laravel</span><span>MySQL</span><span>JavaScript</span></p>
                 <img src="photo/redhq_project.jpg" alt="Real Estate CRM Platform Screenshot" class="project-image">
                 <p>Developed a robust CRM platform specifically tailored for the real estate industry, designed to streamline property
                     management and enhance client interactions. Built using Laravel, this platform provides real estate professionals
@@ -350,6 +383,7 @@
             <!-- Project 2: AdWora - Media Buying Platform -->
             <div class="project-item">
                 <h3><a href="https://adwora.com/" target="_blank">Project 2: AdWora - Media Buying Platform</a></h3>
+                <p class="project-tags"><span>Laravel Livewire</span><span>REST API</span><span>jQuery</span></p>
                 <img src="photo/adwora_project.jpg" alt="AdWora Media Buying Platform Screenshot" class="project-image">
                 <p>Developed AdWora, a dynamic media buying platform designed to bridge the gap between advertisers and publishers,
                     enabling them to reach their target audiences with precision. Built with Laravel and Laravel Livewire for a
@@ -362,6 +396,7 @@
             <!-- Project 3: Blogging Platform and Shopify Store -->
             <div class="project-item">
                 <h3><a href="https://ralphsfashionhub.com/" target="_blank">Project 3: Blogging Platform and Shopify Store (Ongoing)</a></h3>
+                <p class="project-tags"><span>Shopify</span><span>Liquid</span><span>Frontend Optimization</span></p>
                 <img src="photo/shopify_project.jpg" alt="Blogging Platform and Shopify Store Screenshot" class="project-image">
                 <p>Currently, I am working on an ongoing Shopify store project, crafted to provide a tailored e-commerce experience.
                     This store includes custom product displays, optimized checkout processes, and personalized marketing integrations.
@@ -371,6 +406,7 @@
             <!-- Project 4: Ralph Pabua Hub - Personal Website -->
             <div class="project-item">
                 <h3><a href="https://ralphpabuahub.com" target="_blank">Project 4: Ralph Pabua Hub - Personal Website</a></h3>
+                <p class="project-tags"><span>WordPress</span><span>Responsive UI</span><span>JavaScript</span></p>
                 <img src="photo/mywordpress_site.jpg" alt="Ralph Pabua Hub Screenshot" class="project-image">
                 <p>Developed my personal website and portfolio at RalphPabuaHub.com, designed to showcase my professional background, skills, projects, and certifications. The website is built with HTML, CSS, JavaScript, and is fully responsive across devices. It also highlights my expertise in WordPress, Shopify, Laravel, and DevOps, providing a central hub for potential clients and employers to learn about my work and connect with me.</p>
             </div>
@@ -381,6 +417,11 @@
 <section id="contact">
     <h2>Contact Me</h2>
     <p>If you have any questions or want to discuss a project, feel free to reach out!</p>
+    <div class="contact-links">
+        <a href="mailto:pabua.ralph55@gmail.com">Email</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
     
     <div class="contact-form">
         <form action="https://formsubmit.co/pabua.ralph55@gmail.com" method="POST">
@@ -394,8 +435,9 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2023 Ralph S. Pabua | All rights reserved</p>
+        <p>© 2026 Ralph S. Pabua | All rights reserved</p>
     </footer>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
 
     <script src="script.js"></script>
 </body>
