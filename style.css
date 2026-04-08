@@ -7,8 +7,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #e5e5e5;
-    background-color: #111;
+    color: #e6ebff;
+    background:
+        radial-gradient(circle at 12% 12%, rgba(95, 124, 247, 0.25), transparent 30%),
+        radial-gradient(circle at 88% 20%, rgba(240, 84, 84, 0.2), transparent 26%),
+        linear-gradient(145deg, #060814 0%, #10162c 45%, #12111f 100%);
+    background-attachment: fixed;
     line-height: 1.5;
 }
 
@@ -45,9 +49,9 @@ textarea:focus-visible {
     justify-content: space-between;
     align-items: center;
     padding: 14px 50px;
-    background: rgba(17, 17, 17, 0.92);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid #2a2a2a;
+    background: rgba(7, 10, 26, 0.78);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(151, 175, 255, 0.18);
 }
 
 .logo {
@@ -96,7 +100,10 @@ textarea:focus-visible {
     justify-content: center;
     height: 60vh; /* Make the hero section full viewport height */
     padding: 0 50px; /* Remove top and bottom padding to make the image touch the section edges */
-    background: linear-gradient(120deg, #242424 0%, #3f3f3f 100%);
+    background:
+        radial-gradient(circle at 80% 18%, rgba(71, 122, 255, 0.22), transparent 42%),
+        radial-gradient(circle at 12% 84%, rgba(240, 84, 84, 0.2), transparent 45%),
+        linear-gradient(120deg, #0e162f 0%, #0f1731 45%, #1b1125 100%);
     color: white;
 }
 
@@ -127,13 +134,13 @@ textarea:focus-visible {
 .subtitle {
     margin: 10px 0;
     font-size: 1.2em;
-    color: #aaa;
+    color: #b9c4ef;
 }
 
 .description {
     margin: 20px 0;
     font-size: 1em;
-    color: #ddd;
+    color: #d8def8;
 }
 
 .hero-buttons .btn {
@@ -155,9 +162,9 @@ textarea:focus-visible {
 }
 
 .secondary-btn {
-    background-color: transparent;
-    color: #f05454;
-    border: 2px solid #f05454;
+    background-color: rgba(12, 18, 41, 0.55);
+    color: #ffd4d4;
+    border: 2px solid rgba(240, 84, 84, 0.78);
 }
 
 .secondary-btn:hover {
@@ -183,7 +190,7 @@ textarea:focus-visible {
 /* Quick Stats */
 #quick-stats {
     padding: 40px 50px 55px;
-    background: #1a1a1a;
+    background: rgba(10, 15, 35, 0.7);
 }
 
 .stats-grid {
@@ -193,10 +200,11 @@ textarea:focus-visible {
 }
 
 .stat-card {
-    background: #232323;
-    border: 1px solid #333;
+    background: linear-gradient(145deg, rgba(22, 31, 65, 0.85), rgba(20, 20, 36, 0.9));
+    border: 1px solid rgba(145, 164, 255, 0.2);
     padding: 24px;
     border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.22);
 }
 
 .stat-card h3 {
@@ -205,7 +213,7 @@ textarea:focus-visible {
 }
 
 .stat-card p {
-    color: #c4c4c4;
+    color: #cfd7f8;
 }
 
 .reveal {
@@ -225,7 +233,7 @@ textarea:focus-visible {
     align-items: center;
     justify-content: center;
     padding: 60px;
-    background-color: #111;
+    background: rgba(7, 10, 27, 0.74);
 }
 
 .about-content {
@@ -234,7 +242,9 @@ textarea:focus-visible {
     max-width: 1000px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(129, 151, 255, 0.2);
+    background: linear-gradient(160deg, rgba(20, 30, 64, 0.82), rgba(16, 19, 34, 0.84));
 }
 
 .about-image {
@@ -254,14 +264,14 @@ textarea:focus-visible {
     margin-bottom: 15px;
 }
 
-.subtitle {
+.about-text .subtitle {
     font-size: 1.2em;
     color: #f05454;
     margin-bottom: 10px;
 }
 
 .about-text p {
-    color: #ddd;
+    color: #d7def7;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -270,7 +280,7 @@ textarea:focus-visible {
     list-style-type: none;
     padding: 0;
     margin: 10px 0;
-    color: #aaa;
+    color: #bac5f0;
 
 }
 
@@ -400,7 +410,7 @@ textarea:focus-visible {
     display: flex;
     justify-content: space-around;
     padding: 60px;
-    background-color: #444343;
+    background: linear-gradient(145deg, rgba(30, 26, 44, 0.9), rgba(16, 25, 51, 0.9));
 }
 
 .education, .skills {
@@ -418,7 +428,7 @@ h2 {
 .timeline {
     position: relative;
     padding-left: -90px; /* Adjust this value to align the line with the icons */
-    border-left: 2px solid #7c7a7b; /* Vertical line for the timeline */
+    border-left: 2px solid rgba(160, 178, 255, 0.46); /* Vertical line for the timeline */
 }
 
 .timeline-item {
@@ -448,7 +458,7 @@ h2 {
 
 .timeline-content p {
     font-size: 0.95em;
-    color: #aaa;
+    color: #bcc8f2;
 }
 
 /* Skills Section */
@@ -461,7 +471,7 @@ h2 {
 }
 
 .progress-bar {
-    background-color: #444;
+    background-color: rgba(108, 123, 179, 0.36);
     border-radius: 5px;
     overflow: hidden;
     height: 10px;
@@ -534,7 +544,7 @@ h2 {
 /* Trainings Section */
 #trainings {
     padding: 60px;
-    background-color: #111;
+    background: rgba(7, 10, 27, 0.8);
     color: white;
     text-align: center;
 }
@@ -550,7 +560,7 @@ h2 {
     position: relative;
     padding-left: -10px;
     margin-left: 45px;
-    border-left: 2px solid #b6b8b7;
+    border-left: 2px solid rgba(157, 176, 255, 0.52);
     text-align: left;
     max-width: 800px;
 }
@@ -582,7 +592,7 @@ h2 {
 
 .training_timeline-content .date {
     font-style: italic;
-    color: #aaa;
+    color: #c1cbf3;
     margin-bottom: 10px;
 }
 
@@ -593,7 +603,7 @@ h2 {
 
 .training_timeline-content ul li {
     font-size: 0.95em;
-    color: #aaa;
+    color: #cad5ff;
     line-height: 1.6;
     margin-bottom: 8px;
 }
@@ -602,14 +612,14 @@ h2 {
 /* Experience and Projects Section */
 #experience {
     padding: 60px;
-    background-color: #444343;
+    background: linear-gradient(145deg, rgba(30, 26, 44, 0.9), rgba(16, 25, 51, 0.9));
     color: white;
     text-align: center;
 }
 
 #projects {
     padding: 60px;
-    background-color: #222;
+    background: rgba(9, 14, 33, 0.82);
     color: white;
     text-align: center;
 }
