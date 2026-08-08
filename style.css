@@ -637,16 +637,41 @@ h2 {
 }
 
 #projects {
-    padding: 60px;
-    background: rgba(9, 14, 33, 0.82);
+    padding: 96px 60px;
+    background:
+        radial-gradient(circle at 88% 8%, rgba(240, 84, 84, 0.16), transparent 28%),
+        linear-gradient(155deg, rgba(7, 11, 27, 0.98), rgba(14, 21, 45, 0.98));
     color: white;
-    text-align: center;
+    overflow: hidden;
 }
 
-#experience h2, #projects h2 {
+#experience h2 {
     color: #f05454;
     font-size: 2em;
     margin-bottom: 30px;
+}
+
+.projects-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+    align-items: end;
+    gap: 56px;
+    max-width: 1160px;
+    margin: 0 auto 44px;
+}
+
+.projects-heading h2 {
+    max-width: 680px;
+    color: #fff;
+    font-size: clamp(2.15rem, 4vw, 3.7rem);
+    line-height: 1.06;
+    letter-spacing: -0.04em;
+}
+
+.projects-heading > p {
+    color: #b9c5e9;
+    font-size: 1rem;
+    line-height: 1.75;
 }
 
 /* AI Automation Section */
@@ -824,60 +849,138 @@ h2 {
 }
 
 .project-list {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 
 .project-item {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background: linear-gradient(155deg, rgba(26, 36, 72, 0.88), rgba(12, 17, 37, 0.96));
+    border: 1px solid rgba(145, 164, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.24);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-6px);
+    border-color: rgba(240, 84, 84, 0.52);
+    box-shadow: 0 26px 65px rgba(0, 0, 0, 0.34);
 }
 
 .project-item h3 {
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
 }
 
-.project-item p {
+.project-item .project-content > p:not(.project-tags):not(.project-type) {
     font-size: 0.95em;
-    color: #aaa;
+    color: #b9c5e9;
+    line-height: 1.7;
+}
+
+.project-visual {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #0b1024;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transition: transform 0.55s ease, filter 0.4s ease;
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.04);
+    filter: brightness(0.82);
+}
+
+.project-number {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    color: #fff;
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    background: rgba(7, 10, 26, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+}
+
+.project-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+}
+
+.project-type {
+    color: #f58b8b;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    margin-bottom: 9px;
+    text-transform: uppercase;
 }
 
 .project-tags {
-    margin: 10px 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 22px 0 24px;
 }
 
 .project-tags span {
-    display: inline-block;
-    margin: 0 8px 8px 0;
-    padding: 5px 10px;
+    padding: 6px 10px;
     border-radius: 999px;
-    background: #3b3b3b;
-    border: 1px solid #5a5a5a;
-    font-size: 0.8rem;
-    color: #ddd;
+    background: rgba(112, 133, 224, 0.1);
+    border: 1px solid rgba(151, 175, 255, 0.24);
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: #dbe2ff;
 }
 
-/* Style for project links to remove color and underline */
-.project-item h3 a {
-    color: inherit; /* Inherits the color from the parent element */
-    text-decoration: none; /* Removes underline */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-decoration: none;
 }
 
-.project-item h3 a:hover {
-    text-decoration: underline; /* Optional: underline on hover to indicate it's clickable */
-}
-.project-image {
-    width: 100%;
-    max-width: 750px;
-    height: auto;
-    border-radius: 5px;
-    margin: 15px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.project-link span {
+    color: #f05454;
+    font-size: 1.15rem;
+    transition: transform 0.2s ease;
 }
 
-.project-item:last-child {
-    margin-bottom: 0;
+.project-link:hover span {
+    transform: translate(3px, -3px);
 }
 
 
@@ -1058,6 +1161,41 @@ footer {
     .automation-cta {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    #projects {
+        padding: 68px 20px;
+    }
+
+    .projects-heading {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 32px;
+    }
+
+    .projects-heading h2 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .project-content {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .project-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .project-number {
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
     }
 }
 
