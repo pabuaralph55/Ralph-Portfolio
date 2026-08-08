@@ -608,6 +608,25 @@ h2 {
     margin-bottom: 8px;
 }
 
+.training-certificate {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid rgba(240, 84, 84, 0.7);
+    border-radius: 6px;
+    background: rgba(240, 84, 84, 0.12);
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.training-certificate:hover {
+    border-color: #f05454;
+    background: rgba(240, 84, 84, 0.28);
+}
+
 
 /* Experience and Projects Section */
 #experience {
