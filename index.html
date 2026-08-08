@@ -29,45 +29,47 @@
 
     <!-- Hero Section -->
 <section id="hero">
+    <div class="hero-shell">
     <div class="hero-content">
-        <h1>I'm <span class="highlight">Ralph S. Pabua</span></h1>
+        <p class="hero-eyebrow"><span></span> Available for web &amp; automation projects</p>
+        <h1>I build digital products that <span class="highlight">work smarter.</span></h1>
         <!-- <p class="subtitle">Full-Stack Developer | Electronics Engineer | Licensed Professional Teacher</p>
         <p class="description">I specialize in creating intuitive, high-quality web experiences with expertise in both frontend
             and backend development. I’m passionate about building dynamic, user-focused websites and applications that combine
             seamless functionality with aesthetic design.</p> -->
-        <p class="subtitle">Frontend & Full-Stack Developer | AI Automation Specialist | ISC2 CC Certified</p>
-        <p class="description">Detail-oriented and results-driven Web Developer with 4+ years of experience building scalable web
-            applications using Laravel, React, WordPress, Shopify, and modern JavaScript. Certified in Cybersecurity (ISC2 CC)
-            with hands-on knowledge in web security, network analysis, and secure development practices. Combines strong DevOps
-            fundamentals with clean, responsive UI engineering to deliver secure, high-performing, and business-focused web
-            solutions. I also design AI-powered automations with n8n, Zapier, and Make.com to connect business tools, reduce
-            repetitive work, and turn manual processes into reliable workflows.</p>
+        <p class="subtitle">Hi, I'm <strong>Ralph S. Pabua</strong> — Frontend &amp; Full-Stack Developer, AI Automation Specialist, and ISC2 CC Certified professional.</p>
+        <p class="description">With <strong>5+ years specifically in web development</strong>, I create secure, scalable applications with Laravel, React, WordPress, Shopify, and modern JavaScript. My broader background in electronics engineering, teaching, cybersecurity, and DevOps helps me turn complex business needs into clear, reliable digital solutions. I also build AI-powered workflows with n8n, Zapier, and Make.com.</p>
 
         <div class="hero-buttons">
-            <a href="#about" class="btn primary-btn">Learn More</a>
-            <a href="#projects" class="btn secondary-btn">View Projects</a>
-            <a href="#automation" class="btn secondary-btn">Explore Automation</a>
-            <a href="files/Ralph_Pabua_Resume_Final_v2.pdf" class="btn secondary-btn" download="Ralph_Pabua_Resume_Final_v2.pdf">Download Resume</a>
+            <a href="#projects" class="btn primary-btn">View My Work <span aria-hidden="true">→</span></a>
+            <a href="files/Ralph_Pabua_Resume_Final_v2.pdf" class="btn secondary-btn" download="Ralph_Pabua_Resume_Final_v2.pdf">Download Résumé</a>
         </div>
     </div>
     <div class="hero-image-container">
-        <img src="photo/myphoto.png" alt="Portrait of Ralph S. Pabua" class="hero-image" loading="eager"> <!-- Make sure this image has a transparent background -->
+        <div class="portrait-frame">
+            <span class="portrait-label">Based in Cebu, Philippines</span>
+            <img src="photo/myphoto.png" alt="Portrait of Ralph S. Pabua" class="hero-image" loading="eager">
+        </div>
+    </div>
     </div>
 </section>
 
 <section id="quick-stats">
     <div class="stats-grid">
         <div class="stat-card reveal">
+            <span class="stat-number">01</span>
             <h3>5+ Years</h3>
-            <p>Professional web development experience.</p>
+            <p>Dedicated web development experience across frontend, backend, CMS, and e-commerce.</p>
         </div>
         <div class="stat-card reveal">
+            <span class="stat-number">02</span>
             <h3>20+ Projects</h3>
             <p>Websites and apps delivered across platforms.</p>
         </div>
         <div class="stat-card reveal">
-            <h3>AI + Automation</h3>
-            <p>n8n, Zapier, Make.com, API integrations, and smart workflows.</p>
+            <span class="stat-number">03</span>
+            <h3>Multidisciplinary</h3>
+            <p>Engineering, education, cybersecurity, DevOps, and AI automation experience.</p>
         </div>
     </div>
 </section>
@@ -75,27 +77,26 @@
    <!-- About Section -->
 <section id="about">
     <div class="about-content">
-        <img src="photo/myphoto.png" alt="Ralph S. Pabua profile photo" class="about-image" loading="lazy">
+        <div class="about-intro reveal">
+            <p class="eyebrow">Beyond the code</p>
+            <h2>Experience that brings a wider perspective.</h2>
+            <p class="about-lead">I combine five-plus years of focused web development with experience spanning engineering, education, cybersecurity, and intelligent automation.</p>
+            <a href="#contact" class="text-link">Let's work together <span aria-hidden="true">↗</span></a>
+        </div>
         <div class="about-text">
-            <h2>Why hire me for your next project?</h2>
             <!-- <p class="subtitle">Full-Stack Developer & Web Engineer</p>
             <p>As a versatile developer with deep expertise in both frontend and backend development, I bring a unique blend of
                 creativity, technical skill, and strategic insight to every project. My approach ensures that each solution is not
                 only functional and efficient but also crafted to the highest standards of quality and performance. I am dedicated
                 to delivering impactful digital experiences that align with your goals and exceed expectations.</p> -->
-            <p class="subtitle">Frontend & Full-Stack Developer | WordPress & Shopify Specialist | Cybersecurity Certified</p>
-            <p>As a versatile developer with expertise across frontend and backend development, I build intuitive, high-quality web
-                experiences that prioritize performance and security. I bring strong hands-on experience in Laravel, React.js,
-                Vue.js, WordPress, and Shopify, and apply best practices in web security, cross-browser compatibility, and
-                optimization. Backed by ISC2 CC certification and modern DevOps training, I deliver scalable solutions that align
-                technical excellence with business goals.</p>
-            <ul class="about-details">
-                <li><strong>Birthday:</strong> August 29, 1982</li>
-                <li><strong>Location:</strong> Villa Angelina, Danao City, Cebu, Philippines</li>
-                <li><strong>Email:</strong> pabua.ralph55@gmail.com</li>
-            </ul>
-            <div class="about-buttons">
-                <a href="#contact" class="btn">Hire Me</a>
+            <div class="experience-item reveal">
+                <span>01</span><div><h3>Web development</h3><p>5+ years building responsive, high-performing products with Laravel, React.js, Vue.js, WordPress, Shopify, and modern JavaScript.</p></div>
+            </div>
+            <div class="experience-item reveal">
+                <span>02</span><div><h3>Engineering &amp; education</h3><p>An electronics engineering foundation and professional teaching experience sharpen how I analyze systems, explain ideas, and collaborate.</p></div>
+            </div>
+            <div class="experience-item reveal">
+                <span>03</span><div><h3>Security, DevOps &amp; automation</h3><p>ISC2 CC certification, DevOps training, and hands-on automation work help me deliver secure solutions and efficient workflows.</p></div>
             </div>
         </div>
     </div>
