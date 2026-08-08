@@ -549,25 +549,75 @@
        
 <!-- Contact Section -->
 <section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you have any questions or want to discuss a project, feel free to reach out!</p>
-    <div class="contact-links">
-        <a href="mailto:pabua.ralph55@gmail.com">Email</a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile in a new tab">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile in a new tab">LinkedIn</a>
-    </div>
-    
-    <div class="contact-form">
-        <form action="https://formsubmit.co/pabua.ralph55@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New portfolio inquiry from website">
-            <input type="hidden" name="_template" value="table">
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea class="message" name="message" placeholder="Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
+    <div class="contact-shell">
+        <div class="contact-intro reveal">
+            <p class="eyebrow">Let’s build something useful</p>
+            <h2>Have a project in mind?</h2>
+            <p class="contact-lead">Tell me what you’re working on and where you need support. I’m always open to thoughtful web development, e-commerce, and automation projects.</p>
+
+            <div class="availability-note">
+                <span class="availability-dot" aria-hidden="true"></span>
+                <div>
+                    <strong>Available for new opportunities</strong>
+                    <span>Based in Cebu, Philippines · Working worldwide</span>
+                </div>
+            </div>
+
+            <div class="contact-links" aria-label="Other ways to connect">
+                <a href="mailto:pabua.ralph55@gmail.com">
+                    <span class="contact-link-icon" aria-hidden="true">@</span>
+                    <span><small>Email me directly</small>pabua.ralph55@gmail.com</span>
+                    <span class="contact-link-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile in a new tab">
+                    <span class="contact-link-icon" aria-hidden="true">GH</span>
+                    <span><small>Explore my code</small>GitHub</span>
+                    <span class="contact-link-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile in a new tab">
+                    <span class="contact-link-icon" aria-hidden="true">in</span>
+                    <span><small>Connect professionally</small>LinkedIn</span>
+                    <span class="contact-link-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-form reveal">
+            <div class="contact-form-heading">
+                <span>Start a conversation</span>
+                <span class="form-step">01 / 01</span>
+            </div>
+            <form action="https://formsubmit.co/pabua.ralph55@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New portfolio inquiry from website">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="visually-hidden" aria-hidden="true">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="contact-name">Your name</label>
+                        <input id="contact-name" type="text" name="name" placeholder="Jane Smith" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="contact-email">Email address</label>
+                        <input id="contact-email" type="email" name="email" placeholder="jane@company.com" autocomplete="email" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="contact-subject">What can I help with?</label>
+                    <select id="contact-subject" name="project_type">
+                        <option value="Web Development">Web development</option>
+                        <option value="AI Automation">AI &amp; workflow automation</option>
+                        <option value="E-commerce">WordPress or Shopify</option>
+                        <option value="Other">Something else</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="contact-message">Project details</label>
+                    <textarea id="contact-message" class="message" name="message" placeholder="A few details about your project, timeline, and goals..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="contact-submit">Send inquiry <span aria-hidden="true">→</span></button>
+            </form>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+        </div>
     </div>
 </section>
 
